@@ -78,8 +78,13 @@
                 @endforeach
                 </tbody>
             </table>
-
             @endif
+
+        {{-- pagination --}}
+            <div class="row text-center">
+                {{$storedTasks->links()}}
+            </div>
+
     </div>
 </div>
 </body>
